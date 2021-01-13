@@ -25,7 +25,7 @@ class Asteroid extends GameObject {
     
     position.x = random(width);
     velocity.x = random(-2,2);
-    velocity.y = random(-2,2);
+    velocity.y = random(-6,6);
     rotation = random(0, 360);
     velocityAngle = random(-10,10);
     

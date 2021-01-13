@@ -39,7 +39,7 @@ void draw(){
   
   //This is essentially the update design pattern.
   
-  //for(Asteroid a : asteroids) a.update;
+  for(Asteroid a : asteroids) a.update();
   thePlayer.update();
   
   
