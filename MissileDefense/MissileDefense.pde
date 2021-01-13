@@ -38,6 +38,8 @@ void draw(){
   // update all game objects
   
   //This is essentially the update design pattern.
+  
+  //for(Asteroid a : asteroids) a.update;
   thePlayer.update();
   
   
@@ -45,7 +47,7 @@ void draw(){
   // Render all game objects
   background(0);
   background.draw();
-  for(Asteroid a: asteroids) a.draw;
+  for(Asteroid a : asteroids) a.draw();
   thePlayer.draw();
 
 }
@@ -57,13 +59,13 @@ PImage GetRandomAstroidImage(){
    int num = (int)random(0, 3);
    switch(num){
     case 0:
-    img = loadImage("astriod1.png");
+    img = loadImage("asteroid1.png");
     break;
     case 1:
-    img = loadImage("astriod2.png");
+    img = loadImage("asteroid2.png");
     break;
     case 2:
-    img = loadImage("astriod3.png");
+    img = loadImage("asteroid3.png");
     default:
     break;
    }
